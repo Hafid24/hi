@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS clients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT ,
+    total_amount INTEGER,
+    social_number INTEGER,
+    card_number INTEGER
+);
+
+
+CREATE TABLE IF NOT EXISTS credits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_client INTEGER,
+    name TEXT ,
+    amount INTEGER ,
+    date DATE
+);
